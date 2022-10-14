@@ -15,7 +15,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
 {
     use MakesHttpRequests;
     
-    $fakeClient = null;
+    protected $fakeClient = null;
 
     protected function setUp(): void
     {
