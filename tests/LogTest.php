@@ -112,7 +112,7 @@ it('can report an exception with logs', function ($logLevel) {
     $logs = $arguments['context']['logs'];
 
     expect($logs)->toHaveCount(1);
-    if (count($logs)>1) {
+    if (count($logs) > 1) {
         dd($logs);
     }
     expect($logs[0]['level'])->toEqual($logLevel);
